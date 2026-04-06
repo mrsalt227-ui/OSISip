@@ -767,14 +767,7 @@ const Organogram = () => (
 );
 
 // ── Events ────────────────────────────────────────────────────────────────────
-const events = [
-  { title: "Latihan Dasar Kepemimpinan (LDK) 2025", date: "15 Januari 2025",   category: "Kepemimpinan",    color: "green",   desc: "Program pembentukan karakter dan jiwa kepemimpinan bagi anggota OSIS baru.", status: "upcoming" },
-  { title: "Pekan Olahraga dan Seni (PORSENI)",      date: "22 Februari 2025", category: "Olahraga & Seni", color: "amber",   desc: "Ajang kompetisi dan ekspresi diri dalam bidang olahraga dan kesenian antar kelas.", status: "upcoming" },
-  { title: "Peringatan Maulid Nabi 1446 H",          date: "10 Oktober 2024",  category: "Keagamaan",       color: "blue",    desc: "Peringatan kelahiran Nabi Muhammad SAW yang diisi dengan ceramah dan lomba islami.", status: "done" },
-  { title: "Gebyar Ramadhan 1446 H",                 date: "20 Maret 2025",    category: "Keagamaan",       color: "rose",    desc: "Serangkaian kegiatan menyambut bulan suci Ramadhan: pesantren kilat, bazar, dan santunan.", status: "upcoming" },
-  { title: "Bakti Sosial & Lingkungan",              date: "5 November 2024",  category: "Sosial",          color: "emerald", desc: "Kegiatan membersihkan lingkungan sekolah dan santunan kepada anak yatim sekitar sekolah.", status: "done" },
-  { title: "Musyawarah Perwakilan Kelas",            date: "10 Desember 2024", category: "Organisasi",      color: "purple",  desc: "Forum resmi penyampaian aspirasi siswa kepada pengurus OSIS dari seluruh perwakilan kelas.", status: "done" },
-];
+
 
 const eventBadgeMap = {
   green:   "bg-green-50 text-green-800 border-green-200 dark:bg-green-900/30 dark:text-green-300 dark:border-green-800/50",
