@@ -3,7 +3,7 @@ import { motion, useInView, useScroll, useTransform, AnimatePresence } from "fra
 import {
   Menu, X, Star, BookOpen, Heart, Users, Calendar,
   Mail, Phone, MapPin, Instagram, Youtube, Facebook,
-  ChevronRight, Sparkles, Shield, Target, Zap, Award,
+  ChevronRight, Shield, Target, Zap, Award,
   ArrowRight, Globe, Clock, Moon, Sun,
 } from "lucide-react";
 
@@ -235,10 +235,9 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-amber-50 dark:bg-amber-900/30 border border-amber-200 dark:border-amber-700/50 rounded-full mb-6"
+            className="mb-6"
           >
-            <Sparkles className="w-3.5 h-3.5 text-amber-500" />
-            <span className="text-xs font-semibold tracking-wide text-amber-700 dark:text-amber-400 uppercase">
+            <span className="text-xs font-bold tracking-[0.18em] uppercase text-amber-600 dark:text-amber-400">
               OSIS SMPIT Insan Permata 2025/2026
             </span>
           </motion.div>
@@ -337,7 +336,7 @@ const Hero = () => {
                 <p className="text-2xl font-bold mb-1">SMPIT Insan Permata</p>
                 <p className="text-green-200 text-sm">Organisasi Siswa Intra Sekolah</p>
                 <div className="mt-6 px-4 py-2 bg-amber-400/20 border border-amber-400/30 rounded-full text-amber-200 text-xs font-medium">
-                  📸 Foto Kegiatan Siswa
+                  Foto Kegiatan Siswa
                 </div>
               </div>
             </div>
@@ -432,9 +431,9 @@ const VisionMission = () => (
   <section id="about" className="py-24 bg-gradient-to-b from-white to-stone-50/50 dark:from-gray-900 dark:to-gray-950 transition-colors duration-500">
     <div className="max-w-7xl mx-auto px-5 lg:px-8">
       <FadeUp className="text-center mb-16">
-        <span className="inline-block text-xs font-bold tracking-[0.2em] uppercase text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-900/30 px-3 py-1.5 rounded-full border border-amber-200 dark:border-amber-700/50 mb-4">
+        <p className="text-xs font-bold tracking-[0.18em] uppercase text-amber-600 dark:text-amber-400 mb-3">
           Landasan Organisasi
-        </span>
+        </p>
         <h2 className="text-3xl sm:text-4xl font-black text-gray-900 dark:text-white tracking-tight">
           Visi, Misi & <span className="text-green-800 dark:text-green-400">Nilai Kami</span>
         </h2>
@@ -497,20 +496,20 @@ const VisionMission = () => (
 
 // ── Organogram ────────────────────────────────────────────────────────────────
 const orgData = {
-  pembina: { name: "Ustadzah Risma", role: "Pembina OSIS", emoji: "🌟" },
-  head:    { name: "Tsabit",         role: "Ketua OSIS",   emoji: "👑" },
+  pembina: { name: "Ustadzah Risma", role: "Pembina OSIS" },
+  head:    { name: "Tsabit",         role: "Ketua OSIS"   },
   bph: [
-    { name: "Rima",   role: "Wakil Ketua",     emoji: "⭐" },
-    { name: "Sabiq",  role: "Sekretaris Utama", emoji: "📋" },
-    { name: "Miza",   role: "Bendahara Utama",  emoji: "💰" },
-    { name: "Sachi",  role: "Sekretaris II",    emoji: "📋" },
-    { name: "Faiz",   role: "Bendahara II",     emoji: "💰" },
-    { name: "Danish", role: "R&D",              emoji: "🔬" },
-    { name: "Safira", role: "HRD",              emoji: "🤝" },
+    { name: "Rima",   role: "Wakil Ketua"      },
+    { name: "Sabiq",  role: "Sekretaris Utama" },
+    { name: "Miza",   role: "Bendahara Utama"  },
+    { name: "Sachi",  role: "Sekretaris II"    },
+    { name: "Faiz",   role: "Bendahara II"     },
+    { name: "Danish", role: "R&D"              },
+    { name: "Safira", role: "HRD"              },
   ],
   divisions: [
     {
-      id: 1, name: "Prestasi Akademik", emoji: "🏅", color: "amber", coordinator: "Azka",
+      id: 1, name: "Prestasi Akademik", color: "amber", coordinator: "Azka",
       members: [
         { name: "Azka",   tag: "Koordinator"   },
         { name: "Dhifa",  tag: null            },
@@ -522,7 +521,7 @@ const orgData = {
       ],
     },
     {
-      id: 2, name: "Seni", emoji: "🎨", color: "rose", coordinator: "Kanaya",
+      id: 2, name: "Seni", color: "rose", coordinator: "Kanaya",
       members: [
         { name: "Kanaya", tag: "Koordinator"   },
         { name: "Sachi",  tag: "Pendamping BPH" },
@@ -532,7 +531,7 @@ const orgData = {
       ],
     },
     {
-      id: 3, name: "TIK", emoji: "💻", color: "blue", coordinator: "Kayyis",
+      id: 3, name: "TIK", color: "blue", coordinator: "Kayyis",
       members: [
         { name: "Kayyis",  tag: "Koordinator"   },
         { name: "Sabrina", tag: null            },
@@ -544,7 +543,7 @@ const orgData = {
       ],
     },
     {
-      id: 4, name: "Olahraga", emoji: "⚽", color: "green", coordinator: "Gage",
+      id: 4, name: "Olahraga", color: "green", coordinator: "Gage",
       members: [
         { name: "Gage",   tag: "Koordinator"   },
         { name: "Alvaro", tag: null            },
@@ -554,7 +553,7 @@ const orgData = {
       ],
     },
     {
-      id: 5, name: "Kepribadian Unggul", emoji: "🌱", color: "emerald", coordinator: "Najla",
+      id: 5, name: "Kepribadian Unggul", color: "emerald", coordinator: "Najla",
       members: [
         { name: "Danish",  tag: "Pendamping BPH" },
         { name: "Lakei",   tag: null            },
@@ -610,14 +609,16 @@ const divColorConfig = {
   },
 };
 
-const BphCard = ({ name, role, emoji }) => (
+const BphCard = ({ name, role }) => (
   <motion.div
     whileHover={{ y: -3, scale: 1.03 }}
     transition={{ duration: 0.18 }}
     className="bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-2xl p-4 text-center shadow-sm hover:shadow-md hover:border-green-200 dark:hover:border-green-700 transition-all duration-300 cursor-default"
   >
-    <div className="w-10 h-10 rounded-xl bg-gray-50 dark:bg-gray-700 border border-gray-100 dark:border-gray-600 mx-auto mb-2 flex items-center justify-center text-xl">
-      {emoji}
+    <div className="w-10 h-10 rounded-xl bg-green-50 dark:bg-green-900/30 border border-green-100 dark:border-green-800 mx-auto mb-2 flex items-center justify-center">
+      <span className="text-xs font-bold text-green-700 dark:text-green-400">
+        {name.slice(0, 2).toUpperCase()}
+      </span>
     </div>
     <p className="font-bold text-gray-900 dark:text-white text-xs leading-tight mb-0.5">{name}</p>
     <p className="text-[10px] text-green-700 dark:text-green-400 font-semibold">{role}</p>
@@ -630,7 +631,9 @@ const SekbidCard = ({ division }) => {
   return (
     <motion.div layout className={`bg-gradient-to-br ${cfg.grad} border ${cfg.border} ${cfg.hover} rounded-2xl overflow-hidden transition-colors duration-300`}>
       <button onClick={() => setOpen(!open)} className="w-full p-5 text-left flex items-start gap-4 group">
-        <span className="text-3xl flex-shrink-0 mt-0.5">{division.emoji}</span>
+        <div className={`w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-black ${cfg.badge}`}>
+          {division.id}
+        </div>
         <div className="flex-1 min-w-0">
           <p className="text-[10px] font-bold tracking-widest text-gray-400 dark:text-gray-500 uppercase mb-0.5">Sekbid {division.id}</p>
           <p className="font-bold text-gray-900 dark:text-white text-sm leading-tight">{division.name}</p>
@@ -675,9 +678,9 @@ const Organogram = () => (
   <section id="organogram" className="py-24 bg-gradient-to-b from-stone-50/50 to-white dark:from-gray-950 dark:to-gray-900 transition-colors duration-500">
     <div className="max-w-7xl mx-auto px-5 lg:px-8">
       <FadeUp className="text-center mb-16">
-        <span className="inline-block text-xs font-bold tracking-[0.2em] uppercase text-green-700 dark:text-green-400 bg-green-50 dark:bg-green-900/30 px-3 py-1.5 rounded-full border border-green-200 dark:border-green-800/60 mb-4">
+        <p className="text-xs font-bold tracking-[0.18em] uppercase text-green-700 dark:text-green-400 mb-3">
           Struktur Organisasi
-        </span>
+        </p>
         <h2 className="text-3xl sm:text-4xl font-black text-gray-900 dark:text-white tracking-tight">
           Pengurus OSIS <span className="text-green-800 dark:text-green-400">2025/2026</span>
         </h2>
@@ -689,7 +692,11 @@ const Organogram = () => (
       {/* Pembina */}
       <FadeUp className="flex justify-center mb-4">
         <div className="inline-flex items-center gap-3 px-5 py-3 bg-gradient-to-r from-amber-50 to-yellow-50 dark:from-amber-900/30 dark:to-yellow-900/20 border border-amber-200 dark:border-amber-700/50 rounded-2xl shadow-sm">
-          <span className="text-2xl">{orgData.pembina.emoji}</span>
+          <div className="w-8 h-8 rounded-lg bg-amber-100 dark:bg-amber-900/50 flex items-center justify-center">
+            <span className="text-xs font-black text-amber-700 dark:text-amber-400">
+              {orgData.pembina.name.slice(0, 2).toUpperCase()}
+            </span>
+          </div>
           <div>
             <p className="text-[10px] font-bold tracking-widest text-amber-600 dark:text-amber-400 uppercase">Pembina</p>
             <p className="font-bold text-gray-900 dark:text-white text-sm">{orgData.pembina.name}</p>
@@ -708,7 +715,11 @@ const Organogram = () => (
           transition={{ duration: 0.2 }}
           className="bg-gradient-to-br from-green-800 to-green-900 rounded-2xl p-5 text-center border border-green-700 shadow-xl shadow-green-900/30 cursor-default"
         >
-          <div className="w-12 h-12 rounded-2xl bg-amber-400 mx-auto mb-3 flex items-center justify-center text-2xl">{orgData.head.emoji}</div>
+          <div className="w-12 h-12 rounded-2xl bg-amber-400 mx-auto mb-3 flex items-center justify-center">
+            <span className="text-sm font-black text-white">
+              {orgData.head.name.slice(0, 2).toUpperCase()}
+            </span>
+          </div>
           <p className="font-black text-white text-sm mb-0.5">{orgData.head.name}</p>
           <p className="text-amber-300 text-[11px] font-semibold">{orgData.head.role}</p>
         </motion.div>
@@ -757,12 +768,12 @@ const Organogram = () => (
 
 // ── Events ────────────────────────────────────────────────────────────────────
 const events = [
-  { title: "Latihan Dasar Kepemimpinan (LDK) 2025", date: "15 Januari 2025",   category: "Kepemimpinan",    color: "green",   desc: "Program pembentukan karakter dan jiwa kepemimpinan bagi anggota OSIS baru.", status: "upcoming", icon: "🏕️" },
-  { title: "Pekan Olahraga dan Seni (PORSENI)",      date: "22 Februari 2025", category: "Olahraga & Seni", color: "amber",   desc: "Ajang kompetisi dan ekspresi diri dalam bidang olahraga dan kesenian antar kelas.", status: "upcoming", icon: "🏆" },
-  { title: "Peringatan Maulid Nabi 1446 H",          date: "10 Oktober 2024",  category: "Keagamaan",       color: "blue",    desc: "Peringatan kelahiran Nabi Muhammad SAW yang diisi dengan ceramah dan lomba islami.", status: "done",     icon: "🌙" },
-  { title: "Gebyar Ramadhan 1446 H",                 date: "20 Maret 2025",    category: "Keagamaan",       color: "rose",    desc: "Serangkaian kegiatan menyambut bulan suci Ramadhan: pesantren kilat, bazar, dan santunan.", status: "upcoming", icon: "⭐" },
-  { title: "Bakti Sosial & Lingkungan",              date: "5 November 2024",  category: "Sosial",          color: "emerald", desc: "Kegiatan membersihkan lingkungan sekolah dan santunan kepada anak yatim sekitar sekolah.", status: "done",     icon: "🌿" },
-  { title: "Musyawarah Perwakilan Kelas",            date: "10 Desember 2024", category: "Organisasi",      color: "purple",  desc: "Forum resmi penyampaian aspirasi siswa kepada pengurus OSIS dari seluruh perwakilan kelas.", status: "done",   icon: "🎤" },
+  { title: "Latihan Dasar Kepemimpinan (LDK) 2025", date: "15 Januari 2025",   category: "Kepemimpinan",    color: "green",   desc: "Program pembentukan karakter dan jiwa kepemimpinan bagi anggota OSIS baru.", status: "upcoming" },
+  { title: "Pekan Olahraga dan Seni (PORSENI)",      date: "22 Februari 2025", category: "Olahraga & Seni", color: "amber",   desc: "Ajang kompetisi dan ekspresi diri dalam bidang olahraga dan kesenian antar kelas.", status: "upcoming" },
+  { title: "Peringatan Maulid Nabi 1446 H",          date: "10 Oktober 2024",  category: "Keagamaan",       color: "blue",    desc: "Peringatan kelahiran Nabi Muhammad SAW yang diisi dengan ceramah dan lomba islami.", status: "done" },
+  { title: "Gebyar Ramadhan 1446 H",                 date: "20 Maret 2025",    category: "Keagamaan",       color: "rose",    desc: "Serangkaian kegiatan menyambut bulan suci Ramadhan: pesantren kilat, bazar, dan santunan.", status: "upcoming" },
+  { title: "Bakti Sosial & Lingkungan",              date: "5 November 2024",  category: "Sosial",          color: "emerald", desc: "Kegiatan membersihkan lingkungan sekolah dan santunan kepada anak yatim sekitar sekolah.", status: "done" },
+  { title: "Musyawarah Perwakilan Kelas",            date: "10 Desember 2024", category: "Organisasi",      color: "purple",  desc: "Forum resmi penyampaian aspirasi siswa kepada pengurus OSIS dari seluruh perwakilan kelas.", status: "done" },
 ];
 
 const eventBadgeMap = {
@@ -787,9 +798,9 @@ const Events = () => (
   <section id="events" className="py-24 bg-gradient-to-b from-white via-stone-50/30 to-white dark:from-gray-900 dark:via-gray-950/50 dark:to-gray-900 transition-colors duration-500">
     <div className="max-w-7xl mx-auto px-5 lg:px-8">
       <FadeUp className="text-center mb-16">
-        <span className="inline-block text-xs font-bold tracking-[0.2em] uppercase text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-900/30 px-3 py-1.5 rounded-full border border-amber-200 dark:border-amber-700/50 mb-4">
+        <p className="text-xs font-bold tracking-[0.18em] uppercase text-amber-600 dark:text-amber-400 mb-3">
           Program Kerja
-        </span>
+        </p>
         <h2 className="text-3xl sm:text-4xl font-black text-gray-900 dark:text-white tracking-tight">
           Kegiatan & <span className="text-amber-500">Event</span>
         </h2>
@@ -799,25 +810,24 @@ const Events = () => (
       </FadeUp>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        {events.map(({ title, date, category, color, desc, status, icon }, i) => (
+        {events.map(({ title, date, category, color, desc, status }, i) => (
           <FadeUp key={title} delay={i * 0.07}>
             <motion.div
               whileHover={{ y: -5 }}
               transition={{ duration: 0.25 }}
               className="group bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-2xl overflow-hidden hover:shadow-xl hover:shadow-gray-100 dark:hover:shadow-black/30 transition-all duration-300 h-full flex flex-col"
             >
-              <div className={`h-36 bg-gradient-to-br ${eventHeaderGrad[color]} relative overflow-hidden flex items-center justify-center`}>
+              <div className={`h-36 bg-gradient-to-br ${eventHeaderGrad[color]} relative overflow-hidden flex items-end justify-start p-4`}>
                 <div className="absolute inset-0 opacity-10">
                   {[1, 2, 3].map(j => (
                     <div key={j} className="absolute rounded-full border border-white"
                       style={{ width: j * 80, height: j * 80, top: "50%", left: "50%", transform: "translate(-50%, -50%)" }} />
                   ))}
                 </div>
-                <span className="text-5xl relative z-10">{icon}</span>
                 <div className={`absolute top-3 right-3 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full ${
                   status === "upcoming" ? "bg-amber-400 text-amber-900" : "bg-white/20 text-white"
                 }`}>
-                  {status === "upcoming" ? "Upcoming" : "Selesai"}
+                  {status === "upcoming" ? "Akan Datang" : "Selesai"}
                 </div>
               </div>
 
@@ -853,7 +863,6 @@ const news = [
     category: "Prestasi",
     excerpt:  "Siswa utusan OSIS berhasil meraih juara pertama dalam lomba pidato bahasa Arab yang diselenggarakan oleh Kemenag Kota...",
     color:    "amber",
-    emoji:    "🏅",
   },
   {
     title:    "Launching Program Literasi Digital: Bijak Bermedsos untuk Pelajar",
@@ -861,7 +870,6 @@ const news = [
     category: "Program",
     excerpt:  "OSIS bersama guru TIK meluncurkan program edukasi literasi digital untuk meningkatkan kesadaran siswa dalam penggunaan media sosial...",
     color:    "blue",
-    emoji:    "💻",
   },
   {
     title:    "Laporan Kegiatan Bakti Sosial: Berbagi di Yayasan Ar-Rahman",
@@ -869,7 +877,6 @@ const news = [
     category: "Sosial",
     excerpt:  "Pengurus OSIS dan seluruh siswa kelas VIII berhasil mengumpulkan donasi untuk 50 anak yatim di Yayasan Ar-Rahman...",
     color:    "green",
-    emoji:    "❤️",
   },
 ];
 
@@ -890,9 +897,9 @@ const News = () => (
     <div className="max-w-7xl mx-auto px-5 lg:px-8">
       <FadeUp className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
         <div>
-          <span className="inline-block text-xs font-bold tracking-[0.2em] uppercase text-green-700 dark:text-green-400 bg-green-50 dark:bg-green-900/30 px-3 py-1.5 rounded-full border border-green-200 dark:border-green-800/60 mb-4">
+          <p className="text-xs font-bold tracking-[0.18em] uppercase text-green-700 dark:text-green-400 mb-3">
             Berita Terkini
-          </span>
+          </p>
           <h2 className="text-3xl sm:text-4xl font-black text-gray-900 dark:text-white tracking-tight">
             Kabar OSIS <span className="text-green-800 dark:text-green-400">Terbaru</span>
           </h2>
@@ -903,15 +910,14 @@ const News = () => (
       </FadeUp>
 
       <div className="grid lg:grid-cols-3 gap-6">
-        {news.map(({ title, date, category, excerpt, color, emoji }, i) => (
+        {news.map(({ title, date, category, excerpt, color }, i) => (
           <FadeUp key={title} delay={i * 0.1}>
             <motion.article
               whileHover={{ y: -5 }}
               transition={{ duration: 0.25 }}
               className="group bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-3xl overflow-hidden hover:shadow-xl hover:shadow-gray-100/80 dark:hover:shadow-black/30 transition-all duration-300 h-full flex flex-col cursor-pointer"
             >
-              <div className={`h-44 relative overflow-hidden flex items-center justify-center ${newsBg[color]}`}>
-                <span className="text-6xl opacity-50">{emoji}</span>
+              <div className={`h-44 relative overflow-hidden ${newsBg[color]}`}>
                 <div className="absolute inset-0 bg-gradient-to-t from-white/20 dark:from-black/20 to-transparent" />
                 <div className="absolute bottom-3 left-3">
                   <span className={`text-[10px] font-bold px-2.5 py-1 rounded-full ${newsCatBadge[color]}`}>{category}</span>
@@ -948,9 +954,9 @@ const CTABanner = () => (
           <div className="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-amber-400/10 blur-3xl" />
           <div className="absolute -bottom-20 -left-20 w-64 h-64 rounded-full bg-white/5 blur-3xl" />
           <div className="relative z-10">
-            <span className="inline-block text-xs font-bold tracking-[0.2em] uppercase text-amber-300 bg-amber-400/20 border border-amber-400/30 px-3 py-1.5 rounded-full mb-6">
+            <p className="text-xs font-bold tracking-[0.18em] uppercase text-amber-300 mb-4">
               Bergabung Bersama Kami
-            </span>
+            </p>
             <h2 className="text-3xl sm:text-4xl font-black mb-4 leading-tight">
               Punya Semangat & Ide?<br />
               <span className="text-amber-300">Ayo Bergerak Bersama!</span>
@@ -1042,7 +1048,7 @@ const Footer = () => (
 
       <div className="pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-3 text-[11px] text-gray-600">
         <p>© 2025/2026 OSIS SMPIT Insan Permata. All rights reserved.</p>
-        <p>Dibuat dengan ❤️ oleh Tim OSIS</p>
+        <p>Dibuat oleh Tim OSIS</p>
       </div>
     </div>
   </footer>
