@@ -1008,7 +1008,7 @@ const Footer = () => (
           <h4 className="text-white font-bold text-sm mb-4">Kontak Sekolah</h4>
           <ul className="space-y-4">
             {[
-              { icon: MapPin, text: "Jl. Insan Permata No. 1, Kota, Provinsi 12345" },
+              { icon: MapPin, text: "Jl. Atletik, Tasikmadu, Kec. Lowokwaru, Kota Malang, Jawa Timur 65152" },
               { icon: Phone,  text: "+62 812-3456-7890" },
               { icon: Mail,   text: "osis@smpitinsanpermata.sch.id" },
             ].map(({ icon: Icon, text }) => (
