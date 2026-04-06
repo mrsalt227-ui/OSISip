@@ -767,7 +767,9 @@ const Organogram = () => (
 );
 
 // ── Events ────────────────────────────────────────────────────────────────────
-
+const events = [
+  
+  ];
 
 const eventBadgeMap = {
   green:   "bg-green-50 text-green-800 border-green-200 dark:bg-green-900/30 dark:text-green-300 dark:border-green-800/50",
@@ -850,27 +852,7 @@ const Events = () => (
 
 // ── News ──────────────────────────────────────────────────────────────────────
 const news = [
-  {
-    title:    "OSIS Insan Permata Raih Juara 1 Lomba Pidato Bahasa Arab Tingkat Kota",
-    date:     "28 Des 2024",
-    category: "Prestasi",
-    excerpt:  "Siswa utusan OSIS berhasil meraih juara pertama dalam lomba pidato bahasa Arab yang diselenggarakan oleh Kemenag Kota...",
-    color:    "amber",
-  },
-  {
-    title:    "Launching Program Literasi Digital: Bijak Bermedsos untuk Pelajar",
-    date:     "15 Des 2024",
-    category: "Program",
-    excerpt:  "OSIS bersama guru TIK meluncurkan program edukasi literasi digital untuk meningkatkan kesadaran siswa dalam penggunaan media sosial...",
-    color:    "blue",
-  },
-  {
-    title:    "Laporan Kegiatan Bakti Sosial: Berbagi di Yayasan Ar-Rahman",
-    date:     "8 Nov 2024",
-    category: "Sosial",
-    excerpt:  "Pengurus OSIS dan seluruh siswa kelas VIII berhasil mengumpulkan donasi untuk 50 anak yatim di Yayasan Ar-Rahman...",
-    color:    "green",
-  },
+  
 ];
 
 const newsBg = {
